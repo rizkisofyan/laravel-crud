@@ -47,12 +47,14 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav me-auto">
+                        @auth
                         <li class="nav-item">
                             <a class="nav-link" href="{{ route('siswa.index') }}">Siswa</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="{{ route('pembelian.index') }}">Pembelian</a>
                         </li>
+                        @endauth
                     </ul>
 
                     <!-- Right Side Of Navbar -->
