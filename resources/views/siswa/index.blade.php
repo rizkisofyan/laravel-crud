@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.admin')
 
 @section('content')
   <div class="container">
@@ -8,7 +8,7 @@
           <div class="card">
               <div class="card-header">
                 Data Siswa
-                <a href="{{ route('siswa.create') }}" class="btn btn-sm btn-primary" style="float: right">
+                <a href="{{ route('siswa.create') }}" class="btn btn-sm btn-primary" style="float: right !important;">
                   Tambah Data
                 </a>
               </div>

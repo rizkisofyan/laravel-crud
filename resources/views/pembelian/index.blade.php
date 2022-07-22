@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.admin')
 
 @section('content')
     <div class="container">
@@ -8,11 +8,11 @@
                 <div class="card">
                     <div class="card-header">
                         Data Pembelian
-                        <a href="{{ route('pembelian.create') }}" class="btn btn-sm btn-primary float-end">
+                        <a href="{{ route('pembelian.create') }}" class="btn btn-sm btn-primary" style="float: right !important;">
                             Tambah Data
                         </a>
                     </div>
-                    <div class="card-body text-center">
+                    <div class="card-body">
                         <div class="table_responsive">
                             <table id="dataTable" class="table align-middle">
                                 <thead>

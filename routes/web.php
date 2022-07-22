@@ -24,6 +24,7 @@ Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-Route::resource('/siswa', SiswaController::class);
-
-Route::resource('/pembelian', PembelianController::class);
+Route::prefix('admin')->group(function () {
+    Route::resource('/siswa', SiswaController::class);
+    Route::resource('/pembelian', PembelianController::class);
+});
